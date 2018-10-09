@@ -1,0 +1,13 @@
+sql : "select * from sql where rowIndex <= " + pageSize * pageIndex + " and roeIndex >=" + (pageSize * (pageIndex - 1)+1);
+//List<QueryFilter> l = params.getQueryFilter();
+List<Map<String,Object>> result = hibernateDao.queryForListWithSql(sql);
+List<Map<String,Object>> n = new ArrayList<Map<String,Object>();
+for (Map<String,Object> m : result) {
+	Map<String,Object> map = HashMap<String,Object>();
+	map.put("depId",map.get("DEP_ID")== null ? "" : String.valueOf(map.get("DEP_ID")));
+	n.add(map);
+}
+List<BigDecimal> recordCountResult = hiberbateDao,executeSqlQuery(sql);
+Integer recordCount = recordCountResult.get(0).intValue();
+// 分页
+return RestUtils.wrappQueryResult(n, recordCount).addDictItems(wrapDictList());
