@@ -11,3 +11,5 @@ List<BigDecimal> recordCountResult = hiberbateDao,executeSqlQuery(sql);
 Integer recordCount = recordCountResult.get(0).intValue();
 // 分页
 return RestUtils.wrappQueryResult(n, recordCount).addDictItems(wrapDictList());
+
+hello
