@@ -1,0 +1,28 @@
+019.03.11
+    invoke: '调用';
+    illustrate: '说明; explain';
+    leak: '泄露; 漏洞; 细孔';
+    descend : '继承 ~from';
+    line terminator: '行终止符';
+    buffer: '缓冲';
+    manually: '手动地';
+    specify: '指定,指明(具体的)';
+2019.03.12
+    Format specifier: '匹配符';
+    customize: '定制; 自定义';
+    designate: '指定; 指派; 划定; delimit';
+2019.03.13
+    primitive: '基本的,原始的,最初的状态; original';
+    invoice: '发票,单据,凭证';
+    routine: 'a sequence of actions regularly followed; 常规;事务';
+    constant: '常量';
+    warpper: '包装纸';
+
+2019.03.22
+    potential : '可能的,潜在的';
+    sample : '样品, 样本(specimen)';
+    notion : '概念, 主张';
+    transparent : '透明的';
+    occasion : '机会,时机,场合';
+    infinite : '无限的(limitless)';
+    account for : '考虑';
